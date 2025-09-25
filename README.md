@@ -11,6 +11,6 @@ Designed to showcase my projects, skills, and contact information in a clean, ae
 
 ## 🛠️ Tech Stack
 
-- [Next.js](https://nextjs.org/) – App Router, Server Components
-- [React](https://react.dev/) – UI components
-- [TailwindCSS](https://tailwindcss.com/) – Styling and responsive design
+- [Next.js](https://nextjs.org/)
+- [React](https://react.dev/)
+- [TailwindCSS](https://tailwindcss.com/)
