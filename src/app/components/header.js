@@ -1,10 +1,19 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [hover, setHover] = useState(false);
+
+  useEffect(() => {
+    if (hover) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+  }, [hover]);
   return (
-    <div className={`sticky top-0 z-40 `}>
+    <div className={`sticky top-0 z-40`}>
       {!isOpen ? (
         <button
           className="size-12 group absolute top-5 right-5 z-50 lg:size-16"
@@ -23,9 +32,11 @@ const Header = () => {
         </button>
       )}
       <div
-        className={`fixed inset-0  h-dvh w-full lg:w-2/3 xl:w-1/2 lg:ml-auto backdrop-blur-2xl transform transition-transform duration-500 bg-black/10  z-40  ${
+        onMouseEnter={() => setHover(true)}
+        onMouseLeave={() => setHover(false)}
+        className={`fixed inset-0  h-dvh w-full lg:w-2/3 xl:w-1/2 lg:ml-auto backdrop-blur-2xl transform transition-transform duration-500 bg-black/10  z-40 overflow-hidden  ${
           !isOpen ? "translate-x-full" : "translate-x-0 "
-        }`}
+        } `}
       >
         <nav className="flex flex-col justify-center items-center gap-10 p-5 h-full text-lg font-semibold lg:text-2xl lg:gap-14">
           <a
