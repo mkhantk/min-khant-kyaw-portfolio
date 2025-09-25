@@ -7,7 +7,7 @@ const Header = () => {
     <div className={`sticky top-0 z-40 `}>
       {!isOpen ? (
         <button
-          className="size-12 group absolute top-5 right-5 z-50"
+          className="size-12 group absolute top-5 right-5 z-50 lg:size-16"
           onClick={() => setIsOpen((prev) => !prev)}
         >
           <span className="inline-block w-3/5 h-0.5 rounded-full bg-gray-200 absolute top-1/2 -translate-x-1/2 duration-300 left-1/2 -translate-y-[5px] group-hover:rotate-10"></span>
@@ -15,7 +15,7 @@ const Header = () => {
         </button>
       ) : (
         <button
-          className="z-50 size-12 group absolute top-5 right-5"
+          className="z-50 size-12 group absolute top-5 right-5 lg:size-16"
           onClick={() => setIsOpen((prev) => !prev)}
         >
           <span className="inline-block w-3/5 h-0.5 rounded-full bg-gray-200 absolute top-1/2 -translate-x-1/2 rotate-45 duration-300 left-1/2 translate-y-1/2"></span>
@@ -23,11 +23,11 @@ const Header = () => {
         </button>
       )}
       <div
-        className={`fixed inset-0  h-dvh w-full backdrop-blur-2xl transform transition-transform duration-500 bg-black/10  z-40  ${
+        className={`fixed inset-0  h-dvh w-full lg:w-2/3 xl:w-1/2 lg:ml-auto backdrop-blur-2xl transform transition-transform duration-500 bg-black/10  z-40  ${
           !isOpen ? "translate-x-full" : "translate-x-0 "
         }`}
       >
-        <nav className="flex flex-col justify-center items-center gap-10 p-5 h-full text-lg font-semibold">
+        <nav className="flex flex-col justify-center items-center gap-10 p-5 h-full text-lg font-semibold lg:text-2xl lg:gap-14">
           <a
             href="#home"
             onClick={() => setIsOpen(false)}

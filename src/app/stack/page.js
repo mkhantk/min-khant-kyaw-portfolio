@@ -16,11 +16,11 @@ import {
 function Stack() {
   return (
     <section id="stacks" className="">
-      <main className="p-5 mb-10">
-        <h2 className="text-xl my-10 text-emerald-400 font-semibold">
+      <main className="p-5 mb-10 md:w-4/5 md:m-auto lg:my-12">
+        <h2 className="text-xl my-10 text-emerald-400 font-semibold md:text-3xl md:text-center">
           My Stack
         </h2>
-        <div className="grid grid-cols-2  justify-start items-center gap-8 text-base">
+        <div className="grid grid-cols-2  justify-start items-center gap-8 text-base md:flex flex-wrap md:justify-center">
           <div className="flex justify-start items-center gap-2">
             <SiHtml5 color="default" size={35} />
             <span>HTML</span>

@@ -3,12 +3,12 @@ import Socials from "../components/socials";
 
 function Contact() {
   return (
-    <section id="contact" className="my-10 mb-20">
-      <main className="p-5">
-        <h2 className="text-xl font-semibold text-emerald-400 my-5">
+    <section id="contact" className="my-10 mb-20 lg:my-15 lg:mb-24">
+      <main className="p-5 md:grid grid-cols-10 justify-center items-center gap-5 lg:w-4/5 lg:m-auto lg:text-2xl">
+        <h2 className="text-xl font-semibold text-emerald-400 my-5 md:text-3xl md:text-center md:col-span-10 xl:text-5xl lg:my-10">
           Get In Touch
         </h2>
-        <div className="flex flex-col justify-center items-start gap-5">
+        <div className="flex flex-col justify-center items-start gap-5 md:w-4/5 md:m-auto md:col-span-5">
           <div className="flex justify-start items-center gap-5">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -16,7 +16,7 @@ function Contact() {
               viewBox="0 0 24 24"
               strokeWidth={1.5}
               stroke="currentColor"
-              className="size-6"
+              className="size-6 xl:size-10"
             >
               <path
                 strokeLinecap="round"
@@ -34,7 +34,7 @@ function Contact() {
               viewBox="0 0 24 24"
               strokeWidth={1.5}
               stroke="currentColor"
-              className="size-6"
+              className="size-6 xl:size-10"
             >
               <path
                 strokeLinecap="round"
@@ -51,7 +51,7 @@ function Contact() {
               viewBox="0 0 24 24"
               strokeWidth={1.5}
               stroke="currentColor"
-              className="size-6"
+              className="size-6 xl:size-10"
             >
               <path
                 strokeLinecap="round"
@@ -67,8 +67,8 @@ function Contact() {
 
             <span>Yangon, Myanmar.</span>
           </div>
-          <Socials />
         </div>
+        <Socials />
       </main>
     </section>
   );

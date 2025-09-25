@@ -12,25 +12,27 @@ import {
 function Projects() {
   return (
     <section id="projects" className="">
-      <main className="p-5">
-        <h2 className="text-xl font-semibold text-emerald-400 my-5">
+      <main className="p-5  md:m-auto xl:w-4/5">
+        <h2 className="text-xl font-semibold text-emerald-400 my-5 md:text-3xl md:text-center xl:text-5xl lg:my-10">
           Projects
         </h2>
-        <div className="min-w-80 p-5 m-auto grid grid-cols-1 gap-10 justify-center items-center">
+        <div className="min-w-80 p-5 m-auto grid grid-cols-1 gap-10 justify-center items-center md:grid-cols-2 lg:gap-16">
           <div
             id="1"
-            className="shadow-lg shadow-blue-500/30 rounded-b-lg  hover:scale-105 ease-in-out duration-300"
+            className="shadow-lg shadow-blue-500/30 rounded-b-lg  hover:scale-105 ease-in-out duration-300 "
           >
             <Image
               src="/space-tourism.png"
               alt="space-tourism-website"
-              width={300}
-              height={300}
+              width={500}
+              height={500}
               className="m-auto rounded-t-lg w-full"
             />
-            <div className=" p-3 flex flex-col justify-between items-start gap-3 rounded-b-lg min-h-40">
+            <div className=" p-3 flex flex-col justify-between items-start gap-3 rounded-b-lg min-h-40 ">
               <div className="flex justify-start items-center gap-2">
-                <h3 className="text-base font-bold">Space Tourism Website</h3>
+                <h3 className="text-base font-bold lg:text-lg">
+                  Space Tourism Website
+                </h3>
                 <Link
                   href="https://github.com/mkhantk/space-tourism-website"
                   target="_blank"
@@ -62,7 +64,7 @@ function Projects() {
                   </svg>
                 </Link>
               </div>
-              <p className="text-sm">
+              <p className="text-sm lg:text-base">
                 Space-tourism-website build with mobile-first approach focus on
                 responsive aspect.{" "}
               </p>
@@ -81,13 +83,13 @@ function Projects() {
             <Image
               src="/portfolio.png"
               alt="portfolio"
-              width={300}
-              height={300}
+              width={500}
+              height={500}
               className="m-auto rounded-t-lg w-full"
             />
-            <div className=" p-3 flex flex-col justify-between items-start gap-3 rounded-b-lg min-h-40">
+            <div className=" p-3 flex flex-col justify-between items-start gap-3 rounded-b-lg min-h-40 ">
               <div className="flex justify-start items-center gap-2">
-                <h3 className="text-base font-bold">Portfolio </h3>
+                <h3 className="text-base font-bold lg:text-lg">Portfolio </h3>
                 <Link
                   href="https://github.com/mkhantk/portfolio"
                   target="_blank"
@@ -119,7 +121,7 @@ function Projects() {
                   </svg>
                 </Link>
               </div>
-              <p className="text-sm">
+              <p className="text-sm lg:text-base">
                 Portfolio website with minimal asethtic. Built with React,
                 Tailwind and Nextjs.
               </p>
@@ -138,13 +140,13 @@ function Projects() {
             <Image
               src="/flashcard.png"
               alt="flashcard website"
-              width={300}
-              height={300}
+              width={500}
+              height={500}
               className="m-auto rounded-t-lg w-full"
             />
-            <div className=" p-3 flex flex-col justify-between items-start gap-3 rounded-b-lg min-h-40">
+            <div className=" p-3 flex flex-col justify-between items-start gap-3 rounded-b-lg min-h-40 ">
               <div className="flex justify-start items-center gap-2">
-                <h3 className="text-base font-bold">Flashcard </h3>
+                <h3 className="text-base font-bold lg:text-lg">Flashcard </h3>
                 <Link
                   href="https://github.com/mkhantk/flashcard"
                   target="_blank"
@@ -176,7 +178,7 @@ function Projects() {
                   </svg>
                 </Link>
               </div>
-              <p className="text-sm">
+              <p className="text-sm lg:text-base">
                 Challenge your vocabulary knowledge. Built with React,
                 Tailwindcss and Vite. Used Merriam Webster API and a wordlist
                 from SCOWL.
@@ -197,13 +199,13 @@ function Projects() {
             <Image
               src="/ecom.png"
               alt="ecom demo"
-              width={300}
-              height={300}
-              className="m-auto rounded-t-lg w-full"
+              width={500}
+              height={500}
+              className="m-auto rounded-t-lg w-full "
             />
-            <div className=" p-3 flex flex-col justify-center items-start gap-3 rounded-b-lg min-h-40">
+            <div className=" p-3 flex flex-col justify-between items-start gap-3 rounded-b-lg min-h-40 ">
               <div className="flex justify-start items-center gap-2">
-                <h3 className="text-base font-bold">Ecom </h3>
+                <h3 className="text-base font-bold lg:text-lg">Ecom </h3>
                 <Link
                   href="https://github.com/mkhantk/ecom"
                   target="_blank"
@@ -235,7 +237,7 @@ function Projects() {
                   </svg>
                 </Link>
               </div>
-              <p className="text-sm">
+              <p className="text-sm lg:text-base">
                 Mini Ecom website with favorite and add to cart feature with
                 mock data from mock api. Built with React, Tailwindcss and vite.
               </p>
@@ -255,13 +257,13 @@ function Projects() {
             <Image
               src="/movieWizard.png"
               alt="movie wizard website"
-              width={300}
-              height={300}
+              width={500}
+              height={500}
               className="m-auto rounded-t-lg w-full"
             />
-            <div className=" p-3 flex flex-col justify-center items-start gap-3 rounded-b-lg min-h-40">
+            <div className=" p-3 flex flex-col justify-between items-start gap-3 rounded-b-lg min-h-40 ">
               <div className="flex justify-start items-center gap-2">
-                <h3 className="text-base font-bold">Movie Wizard</h3>
+                <h3 className="text-base font-bold lg:text-lg">Movie Wizard</h3>
                 <Link
                   href="https://github.com/mkhantk/movie-wizard"
                   target="_blank"
@@ -293,7 +295,7 @@ function Projects() {
                   </svg>
                 </Link>
               </div>
-              <p className="text-sm">
+              <p className="text-sm lg:text-base">
                 A movie recommender website using themoviedb api. Built with
                 React, Tailwindcss and Vite.
               </p>
@@ -312,13 +314,15 @@ function Projects() {
             <Image
               src="/productList.png"
               alt="product list with cart"
-              width={300}
-              height={300}
+              width={500}
+              height={500}
               className="m-auto rounded-t-lg w-full"
             />
-            <div className=" p-3 flex flex-col justify-center items-start gap-3 rounded-b-lg min-h-40">
+            <div className=" p-3 flex flex-col justify-between items-start gap-3 rounded-b-lg min-h-40 ">
               <div className="flex justify-start items-center gap-2">
-                <h3 className="text-base font-bold">Product list with cart</h3>
+                <h3 className="text-base font-bold lg:text-lg">
+                  Product list with cart
+                </h3>
                 <Link
                   href="https://github.com/mkhantk/product-list-with-cart"
                   target="_blank"
@@ -350,7 +354,7 @@ function Projects() {
                   </svg>
                 </Link>
               </div>
-              <p className="text-sm">
+              <p className="text-sm lg:text-base">
                 Mini food ordering website with add to cart and order fuction.
                 Built with React, Tailwindcss and Vite.
               </p>

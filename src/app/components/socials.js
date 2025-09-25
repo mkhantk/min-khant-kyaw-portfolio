@@ -3,9 +3,11 @@ import { SiX, SiTelegram, SiGithub } from "@icons-pack/react-simple-icons";
 
 function Socials() {
   return (
-    <div id="socials">
-      <h3 className="text-xl font-semibold text-emerald-400 my-5">Socials</h3>
-      <div className="flex flex-wrap justify-start items-center gap-5 w-full">
+    <div id="socials" className="w-full md:m-auto md:col-span-5">
+      <h3 className="text-xl font-semibold text-emerald-400 my-5 md:text-2xl md:text-center xl:text-4xl">
+        Socials
+      </h3>
+      <div className="flex flex-wrap justify-start items-center gap-5 w-full md:justify-center xl:gap-10">
         <a
           href="https://www.linkedin.com/in/min-khant-kyaw-4648432b2"
           target="_blank"
@@ -18,7 +20,7 @@ function Socials() {
             width="100"
             height="100"
             viewBox="0 0 48 48"
-            className="size-10"
+            className="size-10 xl:size-14"
           >
             <path
               fill="#0288D1"
@@ -32,13 +34,13 @@ function Socials() {
         </a>
         <a href="https://github.com/mkhantk" target="_blank">
           <SiGithub
-            className="text-gray-200 cursor-pointer hover:-translate-y-1 ease-in-out duration-300"
+            className="text-gray-200 cursor-pointer hover:-translate-y-1 ease-in-out duration-300 xl:size-12"
             size={30}
           />
         </a>
         <a href="https://x.com/mkhantk_" target="_blank">
           <SiX
-            className="text-gray-200 cursor-pointer hover:-translate-y-1 ease-in-out duration-300"
+            className="text-gray-200 cursor-pointer hover:-translate-y-1 ease-in-out duration-300 xl:size-12"
             size={30}
           />
         </a>
@@ -46,7 +48,7 @@ function Socials() {
           <SiTelegram
             color="default"
             size={30}
-            className="cursor-pointer hover:-translate-y-1 ease-in-out duration-300"
+            className="cursor-pointer hover:-translate-y-1 ease-in-out duration-300 xl:size-12"
           />
         </a>
       </div>

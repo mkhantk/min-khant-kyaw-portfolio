@@ -5,7 +5,7 @@
 }
 
 @theme {
-  --animate-wave: wave 1.5s ease-in-out;
+  --animate-wave: wave 1.5s ease-in-out infinite;
   @keyframes wave {
     0%,
     15% {
@@ -30,35 +30,13 @@
       transform: rotate(0deg);
     }
   }
-  --animate-fade-in-up: fade-in-up 1.5s ease-in-out;
-  @keyframes fade-in-up {
+  --animate-slide-out-right: slide-out-right 1.5s;
+  @keyframes slide-out-right {
     0% {
-      opacity: 0;
-      transform: "translate3d(0, 100%, 0)";
-    }
-    100% {
-      opacity: 1;
       transform: "translate3d(0, 0, 0)";
     }
-  }
-  ---animate-fade-in-right: fade-in-right 1.5s ease-in-out;
-  @keyframes fade-in-right {
-    0% {
-      opacity: 0;
-      transform: "translate3d(100%, 0, 0)";
-    }
     100% {
-      opacity: 1;
-      transform: "translate3d(0, 0, 0)";
-    }
-  }
-  --animate-fade-out-right: fade-out-right 1.5s ease-in-out;
-  @keyframes fade-out-right {
-    0% {
-      opacity: 1;
-    }
-    100% {
-      opacity: 0;
+      visibility: "hidden";
       transform: "translate3d(100%, 0, 0)";
     }
   }
