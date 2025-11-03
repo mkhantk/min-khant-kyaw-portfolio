@@ -12,11 +12,70 @@ import {
 function Projects() {
   return (
     <section id="projects" className="">
-      <main className="p-5  md:m-auto xl:w-4/5">
+      <main className="p-5  md:m-auto lg:w-4/5 ">
         <h2 className="text-xl font-semibold text-emerald-400 my-5 md:text-3xl md:text-center xl:text-5xl lg:my-10">
           Projects
         </h2>
+       
         <div className="min-w-80 p-5 m-auto grid grid-cols-1 gap-10 justify-center items-center md:grid-cols-2 lg:gap-16">
+           <div
+            id="0"
+            className="shadow-lg shadow-blue-500/30 rounded-b-lg  hover:scale-105 ease-in-out duration-300 "
+          >
+            <Image
+              src="/web-dictionary.png"
+              alt="web-dictionary-website"
+              width={500}
+              height={500}
+              className="m-auto rounded-t-lg w-full"
+            />
+            <div className=" p-3 flex flex-col justify-between items-start gap-3 rounded-b-lg min-h-40 ">
+              <div className="flex justify-start items-center gap-2">
+                <h3 className="text-base font-bold lg:text-lg">
+                 Web Dictionary 
+                </h3>
+                <Link
+                  href="https://github.com/mkhantk/web-dictionary"
+                  target="_blank"
+                  className="cursor-pointer "
+                >
+                  <SiGithub
+                    className="text-gray-200 hover:text-emerald-400"
+                    size={20}
+                  />
+                </Link>
+                <Link
+                  href="https://web-dictionary-six.vercel.app"
+                  target="_blank"
+                  className="cursor-pointer"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    strokeWidth={1.5}
+                    stroke="currentColor"
+                    className="size-5 hover:text-emerald-400"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"
+                    />
+                  </svg>
+                </Link>
+              </div>
+              <p className="text-sm lg:text-base">
+               web-dictionary is build using Merriam Webster Dictionary API and Wordnik API with minimal and responsive asethtic in mind.{" "}
+              </p>
+              <div className="flex gap-5">
+                <SiReact color="default" />
+                <SiTailwindcss color="default" />
+
+                <SiVite color="default" />
+              </div>
+            </div>
+          </div>
           <div
             id="1"
             className="shadow-lg shadow-blue-500/30 rounded-b-lg  hover:scale-105 ease-in-out duration-300 "
