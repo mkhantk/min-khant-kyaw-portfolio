@@ -9,7 +9,7 @@ function Socials() {
       </h3>
       <div className="flex flex-wrap justify-start items-center gap-5 w-full md:justify-center xl:gap-10">
         <a
-          href="https://www.linkedin.com/in/min-khant-kyaw-4648432b2"
+          href="https://www.linkedin.com/in/minkhantkyaw102"
           target="_blank"
           className="cursor-pointer hover:-translate-y-1 ease-in-out duration-300"
         >
