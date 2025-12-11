@@ -11,6 +11,7 @@ function Socials() {
 				<a
 					href="https://www.linkedin.com/in/minkhantkyaw102"
 					target="_blank"
+					rel="noreferrer"
 					className="cursor-pointer hover:-translate-y-1 ease-in-out duration-300"
 				>
 					<svg
@@ -32,19 +33,19 @@ function Socials() {
 						></path>
 					</svg>
 				</a>
-				<a href="https://github.com/mkhantk" target="_blank">
+				<a href="https://github.com/mkhantk" target="_blank" rel="noreferrer">
 					<SiGithub
 						className="text-gray-200 cursor-pointer hover:-translate-y-1 ease-in-out duration-300 xl:size-12"
 						size={30}
 					/>
 				</a>
-				<a href="https://x.com/mkhantk_" target="_blank">
+				<a href="https://x.com/mkhantk_" target="_blank" rel="noreferrer">
 					<SiX
 						className="text-gray-200 cursor-pointer hover:-translate-y-1 ease-in-out duration-300 xl:size-12"
 						size={30}
 					/>
 				</a>
-				<a href="https://t.me/mkhantk" target="_blank">
+				<a href="https://t.me/mkhantk" target="_blank" rel="noreferrer">
 					<SiTelegram
 						color="default"
 						size={30}

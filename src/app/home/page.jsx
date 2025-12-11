@@ -3,6 +3,7 @@ import React, { useEffect, useRef } from "react";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { SplitText } from "gsap/SplitText";
+import handleNav from "../components/scroll";
 
 gsap.registerPlugin(SplitText);
 const Home = () => {
@@ -46,8 +47,8 @@ const Home = () => {
 				{
 					opacity: 1,
 
-					stagger: 0.1,
-					duration: 0.7,
+					stagger: 0.05,
+					duration: 0.5,
 					ease: "power2.inOut",
 				},
 			)
@@ -106,15 +107,15 @@ const Home = () => {
 			<p className="text-lg md:text-xl xl:text-3xl">
 				Creating clean, responsive web experiences with passion and purpose.
 			</p>
-			<div className="buttons flex justify-center items-center gap-3 md: gap-5">
-				<a
-					href="#projects"
+			<div className="buttons flex justify-center items-center gap-3 md:gap-5">
+				<button
+					onClick={(e) => handleNav(e, "projects")}
 					className="button px-5 py-2 text-base flex justify-center items-center gap-3 hover:bg-emerald-500 ring rounded-lg md:font-semibold xl:text-xl"
 				>
 					Projects
-				</a>
-				<a
-					href="#socials"
+				</button>
+				<button
+					onClick={(e) => handleNav(e, "contact")}
 					className="button px-5 py-2 text-base flex justify-center items-center gap-3 hover:bg-emerald-500 ring rounded-lg md:font-semibold xl:text-xl"
 				>
 					Let&apos;s Connect{" "}
@@ -135,7 +136,7 @@ const Home = () => {
 							/>
 						</svg>
 					</span>
-				</a>
+				</button>
 			</div>
 		</main>
 	);

@@ -52,7 +52,7 @@ function Stack() {
 				y: 0,
 				scale: 1,
 				rotation: 0,
-				duration: 0.8,
+				duration: 0.5,
 				stagger: {
 					amount: 0.6,
 					from: "start",
