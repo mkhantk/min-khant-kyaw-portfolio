@@ -6,8 +6,11 @@ import Image from "next/image";
 import {
 	SiGithub,
 	SiNextdotjs,
+	SiPostgresql,
 	SiReact,
+	SiShadcnui,
 	SiTailwindcss,
+	SiTypescript,
 	SiVite,
 } from "@icons-pack/react-simple-icons";
 import gsap from "gsap";
@@ -47,6 +50,7 @@ function Projects() {
 					opacity: 1,
 					y: 0,
 					duration: 0.3,
+					clearProps: "transform",
 					scrollTrigger: {
 						trigger: element,
 						start: "top 80%",
@@ -68,7 +72,68 @@ function Projects() {
 					{/* projects container */}
 					<div
 						id="0"
-						className="project-card shadow-md shadow-blue-500/30 rounded-b-lg  hover:scale-105 ease-in-out duration-300"
+						className="project-card flex flex-col h-full shadow-md shadow-gray-500/30 hover:shadow-emerald-500/30 rounded-b-lg  hover:scale-105 ease-in-out duration-300"
+					>
+						<Image
+							src="/chatesat.png"
+							alt="ChateSat-website"
+							width={500}
+							height={500}
+							className="m-auto rounded-t-lg w-full "
+						/>
+						<div className=" p-3 flex flex-1 flex-col justify-between items-start gap-3 rounded-b-lg min-h-40">
+							<div className="flex justify-start items-center gap-2">
+								<h3 className="text-base font-bold lg:text-lg">ChateSat</h3>
+								<Link
+									href="https://github.com/mkhantk/web-dictionary"
+									target="_blank"
+									className="cursor-pointer "
+								>
+									<SiGithub
+										className="text-gray-200 hover:text-emerald-400"
+										size={20}
+									/>
+								</Link>
+								{/* <Link
+									href="https://web-dictionary-six.vercel.app"
+									target="_blank"
+									className="cursor-pointer"
+								>
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										fill="none"
+										viewBox="0 0 24 24"
+										strokeWidth={1.5}
+										stroke="currentColor"
+										className="size-5 hover:text-emerald-400"
+									>
+										<path
+											strokeLinecap="round"
+											strokeLinejoin="round"
+											d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"
+										/>
+									</svg>
+								</Link> */}
+							</div>
+							<p className="text-sm lg:text-base">
+								ChateSat is a all-in_one volunteer management system, where
+								volunteer teams can communicate, share information and
+								collabrate with each other. Contributed as a frontend developer
+								in this project.
+							</p>
+							<div className="flex gap-5">
+								<SiReact color="default" />
+								<SiTypescript color="default" />
+								<SiTailwindcss color="default" />
+								<SiShadcnui color="default" />
+								<SiNextdotjs color="default" />
+								<SiPostgresql color="default" />
+							</div>
+						</div>
+					</div>
+					<div
+						id="1"
+						className="project-card flex flex-col h-full shadow-md shadow-gray-500/30 hover:shadow-emerald-500/30 rounded-b-lg  hover:scale-105 ease-in-out duration-300"
 					>
 						<Image
 							src="/web-dictionary.png"
@@ -77,7 +142,7 @@ function Projects() {
 							height={500}
 							className="m-auto rounded-t-lg w-full "
 						/>
-						<div className=" p-3 flex flex-col justify-between items-start gap-3 rounded-b-lg min-h-40">
+						<div className=" p-3 flex flex-1 flex-col justify-between items-start gap-3 rounded-b-lg min-h-40">
 							<div className="flex justify-start items-center gap-2">
 								<h3 className="text-base font-bold lg:text-lg">
 									Web Dictionary
@@ -126,8 +191,8 @@ function Projects() {
 						</div>
 					</div>
 					<div
-						id="1"
-						className="project-card shadow-md shadow-blue-500/30 rounded-b-lg  hover:scale-105 ease-in-out duration-300 "
+						id="2"
+						className="project-card flex flex-col h-full shadow-md shadow-gray-500/30 hover:shadow-emerald-500/30 rounded-b-lg  hover:scale-105 ease-in-out duration-300 "
 					>
 						<Image
 							src="/space-tourism.png"
@@ -136,7 +201,7 @@ function Projects() {
 							height={500}
 							className="m-auto rounded-t-lg w-full"
 						/>
-						<div className=" p-3 flex flex-col justify-between items-start gap-3 rounded-b-lg min-h-40 ">
+						<div className=" p-3 flex flex-1 flex-col justify-between items-start gap-3 rounded-b-lg min-h-40 ">
 							<div className="flex justify-start items-center gap-2">
 								<h3 className="text-base font-bold lg:text-lg">
 									Space Tourism Website
@@ -185,8 +250,8 @@ function Projects() {
 						</div>
 					</div>
 					<div
-						id="2"
-						className="project-card shadow-md shadow-blue-500/30 rounded-b-lg  hover:scale-105 ease-in-out duration-300"
+						id="3"
+						className="project-card flex flex-col h-full shadow-md shadow-gray-500/30 hover:shadow-emerald-500/30 rounded-b-lg  hover:scale-105 ease-in-out duration-300"
 					>
 						<Image
 							src="/portfolio.png"
@@ -195,7 +260,7 @@ function Projects() {
 							height={500}
 							className="m-auto rounded-t-lg w-full"
 						/>
-						<div className=" p-3 flex flex-col justify-between items-start gap-3 rounded-b-lg min-h-40 ">
+						<div className=" p-3 flex flex-1 flex-col justify-between items-start gap-3 rounded-b-lg min-h-40 ">
 							<div className="flex justify-start items-center gap-2">
 								<h3 className="text-base font-bold lg:text-lg">Portfolio </h3>
 								<Link
@@ -242,8 +307,8 @@ function Projects() {
 						</div>
 					</div>
 					<div
-						id="3"
-						className="project-card shadow-md shadow-blue-500/30 rounded-b-lg  hover:scale-105 ease-in-out duration-300"
+						id="4"
+						className="project-card flex flex-col h-full shadow-md shadow-gray-500/30 hover:shadow-emerald-500/30 rounded-b-lg  hover:scale-105 ease-in-out duration-300"
 					>
 						<Image
 							src="/flashcard.png"
@@ -252,7 +317,7 @@ function Projects() {
 							height={500}
 							className="m-auto rounded-t-lg w-full"
 						/>
-						<div className=" p-3 flex flex-col justify-between items-start gap-3 rounded-b-lg min-h-40 ">
+						<div className=" p-3 flex flex-1 flex-col justify-between items-start gap-3 rounded-b-lg min-h-40 ">
 							<div className="flex justify-start items-center gap-2">
 								<h3 className="text-base font-bold lg:text-lg">Flashcard </h3>
 								<Link
@@ -301,8 +366,8 @@ function Projects() {
 						</div>
 					</div>
 					<div
-						id="4"
-						className="project-card shadow-md shadow-blue-500/30 rounded-b-lg  hover:scale-105 ease-in-out duration-300"
+						id="5"
+						className="project-card flex flex-col h-full shadow-md shadow-gray-500/30 hover:shadow-emerald-500/30 rounded-b-lg  hover:scale-105 ease-in-out duration-300"
 					>
 						<Image
 							src="/ecom.png"
@@ -311,7 +376,7 @@ function Projects() {
 							height={500}
 							className="m-auto rounded-t-lg w-full "
 						/>
-						<div className=" p-3 flex flex-col justify-between items-start gap-3 rounded-b-lg min-h-40 ">
+						<div className=" p-3 flex flex-1 flex-col justify-between items-start gap-3 rounded-b-lg min-h-40 ">
 							<div className="flex justify-start items-center gap-2">
 								<h3 className="text-base font-bold lg:text-lg">Ecom </h3>
 								<Link
@@ -359,8 +424,8 @@ function Projects() {
 						</div>
 					</div>
 					<div
-						id="5"
-						className="project-card shadow-md shadow-blue-500/30 rounded-b-lg  hover:scale-105 ease-in-out duration-300"
+						id="6"
+						className="project-card flex flex-col h-full shadow-md shadow-gray-500/30 hover:shadow-emerald-500/30 rounded-b-lg  hover:scale-105 ease-in-out duration-300"
 					>
 						<Image
 							src="/movieWizard.png"
@@ -369,7 +434,7 @@ function Projects() {
 							height={500}
 							className="m-auto rounded-t-lg w-full"
 						/>
-						<div className=" p-3 flex flex-col justify-between items-start gap-3 rounded-b-lg min-h-40 ">
+						<div className=" p-3 flex flex-1 flex-col justify-between items-start gap-3 rounded-b-lg min-h-40 ">
 							<div className="flex justify-start items-center gap-2">
 								<h3 className="text-base font-bold lg:text-lg">Movie Wizard</h3>
 								<Link
@@ -416,8 +481,8 @@ function Projects() {
 						</div>
 					</div>
 					<div
-						id="6"
-						className="project-card shadow-md shadow-blue-500/30 rounded-b-lg  hover:scale-105 ease-in-out duration-300"
+						id="7"
+						className="project-card flex flex-col h-full shadow-md shadow-gray-500/30 hover:shadow-emerald-500/30 rounded-b-lg  hover:scale-105 ease-in-out duration-300"
 					>
 						<Image
 							src="/productList.png"
@@ -426,7 +491,7 @@ function Projects() {
 							height={500}
 							className="m-auto rounded-t-lg w-full"
 						/>
-						<div className=" p-3 flex flex-col justify-between items-start gap-3 rounded-b-lg min-h-40 ">
+						<div className=" p-3 flex flex-1 flex-col justify-between items-start gap-3 rounded-b-lg min-h-40 ">
 							<div className="flex justify-start items-center gap-2">
 								<h3 className="text-base font-bold lg:text-lg">
 									Product list with cart

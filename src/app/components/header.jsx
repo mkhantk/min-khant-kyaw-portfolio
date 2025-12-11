@@ -1,5 +1,7 @@
+/** biome-ignore-all lint/a11y/useButtonType: <explanation> */
 "use client";
 import React, { useEffect, useState } from "react";
+import handleNav from "./scroll";
 
 const Header = () => {
 	const [isOpen, setIsOpen] = useState(false);
@@ -12,6 +14,17 @@ const Header = () => {
 			document.body.style.overflow = "";
 		}
 	}, [hover && isOpen]);
+
+	// const handleNav = (e, id) => {
+	// 	// use gsap to nav
+	// 	const target = document.getElementById(id);
+	// 	e.preventDefault();
+	// 	gsap.to(window, {
+	// 		scrollTo: target,
+	// 		duration: 0.3,
+	// 		ease: "power3.inOut",
+	// 	});
+	// };
 	return (
 		<div className={`sticky top-0 z-40`}>
 			{!isOpen ? (
@@ -39,34 +52,42 @@ const Header = () => {
 				} `}
 			>
 				<nav className="flex flex-col justify-center items-center gap-10 p-5 h-full text-lg font-semibold lg:text-2xl lg:gap-14">
-					<a
-						href="#home"
-						onClick={() => setIsOpen(false)}
+					<button
+						onClick={(e) => {
+							setIsOpen(false);
+							handleNav(e, "home");
+						}}
 						className="hover:text-emerald-400 hover:scale-105 ease-in-out"
 					>
 						Home
-					</a>
-					<a
-						href="#projects"
-						onClick={() => setIsOpen(false)}
+					</button>
+					<button
+						onClick={(e) => {
+							setIsOpen(false);
+							handleNav(e, "projects");
+						}}
 						className="hover:text-emerald-400 hover:scale-105 ease-in-out"
 					>
 						Projects
-					</a>
-					<a
-						href="#about"
-						onClick={() => setIsOpen(false)}
+					</button>
+					<button
+						onClick={(e) => {
+							setIsOpen(false);
+							handleNav(e, "about");
+						}}
 						className="hover:text-emerald-400 hover:scale-105 ease-in-out"
 					>
 						About
-					</a>
-					<a
-						href="#contact"
-						onClick={() => setIsOpen(false)}
+					</button>
+					<button
+						onClick={(e) => {
+							setIsOpen(false);
+							handleNav(e, "contact");
+						}}
 						className="hover:text-emerald-400 hover:scale-105 ease-in-out"
 					>
 						Contact
-					</a>
+					</button>
 				</nav>
 			</div>
 		</div>
