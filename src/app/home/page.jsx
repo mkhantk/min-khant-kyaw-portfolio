@@ -30,11 +30,19 @@ const Home = () => {
 			delay: 1,
 			onComplete: () => {
 				document.body.style.overflow = "auto";
+				myChars.forEach((item) => {
+					item.addEventListener("mouseenter", () => {
+						item.style.color = "white";
+					});
+					item.addEventListener("mouseleave", () => {
+						item.style.color = "";
+					});
+				});
 				document.querySelector(".name").addEventListener("mouseenter", () => {
-					gsap.to(".name", { scale: 1.2, duration: 0.3, ease: "power2.out" });
+					gsap.to(".name", { scale: 1.2, duration: 0.3, ease: "power2.inOut" });
 				});
 				document.querySelector(".name").addEventListener("mouseleave", () => {
-					gsap.to(".name", { scale: 1, duration: 0.3, ease: "elastic.out" });
+					gsap.to(".name", { scale: 1, duration: 0.3, ease: "power2.inOut" });
 				});
 			},
 		});
@@ -67,30 +75,30 @@ const Home = () => {
 					y: 5,
 					stagger: 0.1,
 					duration: 0.3,
-					ease: "elastic.out",
+					ease: "power2.out",
 				},
 				"-=0.3",
 			);
 
 		document.querySelectorAll(".button").forEach((button) => {
 			button.addEventListener("mouseenter", () => {
-				gsap.to(button, { scale: 1.2, duration: 0.3, ease: "power2.out" });
+				gsap.to(button, { scale: 1.1, duration: 0.3, ease: "power2.out" });
 			});
 			button.addEventListener("mouseleave", () => {
-				gsap.to(button, { scale: 1, duration: 0.3, ease: "elastic.out" });
+				gsap.to(button, { scale: 1, duration: 0.3, ease: "power2.out" });
 			});
 		});
 
-		return () => {
-			splitText.revert();
-		};
+		// return () => {
+		// 	splitText.revert();
+		// };
 	}, []);
 
 	return (
 		<main
 			ref={containerRef}
 			id="home"
-			className="opacity-0 h-svh flex flex-col justify-center items-start gap-6 p-5 md:items-center md:w-full"
+			className="opacity-0 h-svh flex flex-col justify-center items-start gap-6 p-5 md:items-center md:w-full "
 		>
 			{/* <header id="header" className="text-3xl md:text-4xl xl:text-5xl">
 			</header> */}
@@ -102,7 +110,7 @@ const Home = () => {
 				Min Khant Kyaw
 			</p>
 			<p className="font-bold  md:text-center text-3xl md:text-4xl xl:text-5xl">
-				Front-end Developer
+				Frontend Developer
 			</p>
 			<p className="text-lg md:text-xl xl:text-3xl">
 				Creating clean, responsive web experiences with passion and purpose.

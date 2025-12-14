@@ -6,6 +6,7 @@ import Stack from "./stack/page";
 import Projects from "./projects/page";
 import Contact from "./contact/page";
 import Home from "./home/page";
+import Activity from "./activity/page";
 // import { useEffect } from "react";
 
 export default function App() {
@@ -18,6 +19,7 @@ export default function App() {
 			<Home />
 			<About />
 			<Stack />
+			<Activity />
 			<Projects />
 			<Contact />
 			<Footer />
