@@ -2,67 +2,8 @@
 "use client";
 import React from "react";
 import Socials from "../components/socials";
-import gsap from "gsap";
-import { useGSAP } from "@gsap/react";
-import ScrollTrigger from "gsap/ScrollTrigger";
-
-gsap.registerPlugin(ScrollTrigger);
 
 function Contact() {
-	// useGSAP(() => {
-	// 	// animaiton
-	// 	gsap.fromTo(
-	// 		".contact-title",
-	// 		{
-	// 			opacity: 0,
-	// 			y: 20,
-	// 		},
-	// 		{
-	// 			opacity: 1,
-	// 			y: 0,
-	// 			duration: 0.5,
-	// 			ease: "power2.out",
-	// 			scrollTrigger: {
-	// 				trigger: ".contact-section",
-	// 				start: "bottom bottom",
-	// 			},
-	// 		},
-	// 	);
-	// 	gsap.fromTo(
-	// 		".contact-mail",
-	// 		{
-	// 			opacity: 0,
-	// 			x: 50,
-	// 		},
-	// 		{
-	// 			opacity: 1,
-	// 			x: 0,
-	// 			duration: 0.5,
-	// 			ease: "power2.out",
-	// 			scrollTrigger: {
-	// 				trigger: ".contact-section",
-	// 				start: "bottom bottom",
-	// 			},
-	// 		},
-	// 	);
-	// 	// gsap.fromTo(
-	// 	// 	".contact-title",
-	// 	// 	{
-	// 	// 		opacity: 0,
-	// 	// 		y: 20,
-	// 	// 	},
-	// 	// 	{
-	// 	// 		opacity: 1,
-	// 	// 		y: 0,
-	// 	// 		duration: 0.5,
-	// 	// 		ease: "power2.out",
-	// 	// 		scrollTrigger: {
-	// 	// 			trigger: ".contact-title",
-	// 	// 			start: "top 50%",
-	// 	// 		},
-	// 	// 	},
-	// 	// );
-	// }, []);
 	return (
 		<section
 			id="contact"
