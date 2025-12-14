@@ -62,24 +62,36 @@ function Stack() {
 		);
 
 		// add hover effects on icons
-		document.querySelectorAll(".logo").forEach((logo) => {
-			logo.addEventListener("mouseenter", () => {
-				gsap.to(logo, {
-					y: -10,
-					scale: 1.2,
-					ease: "power2.out",
-					duration: 0.4,
-				});
+		const logos = document.querySelectorAll(".logo");
+
+		const onLogoEnter = (item) => {
+			gsap.to(item.currentTarget, {
+				y: -10,
+				scale: 1.2,
+				ease: "power2.out",
+				duration: 0.4,
 			});
-			logo.addEventListener("mouseleave", () => {
-				gsap.to(logo, {
-					y: 0,
-					scale: 1,
-					duration: 0.6,
-					ease: "elastic.out(1.2, 0.5)",
-				});
+		};
+		const onLogoLeave = (item) => {
+			gsap.to(item.currentTarget, {
+				y: 0,
+				scale: 1,
+				duration: 0.6,
+				ease: "elastic.out(1.2, 0.5)",
 			});
+		};
+
+		logos.forEach((item) => {
+			item.addEventListener("mouseenter", onLogoEnter);
+			item.addEventListener("mouseleave", onLogoLeave);
 		});
+
+		return () => {
+			logos.forEach((item) => {
+				item.removeEventListener("mouseenter", onLogoEnter);
+				item.removeEventListener("mouseleave", onLogoLeave);
+			});
+		};
 	}, []);
 
 	return (

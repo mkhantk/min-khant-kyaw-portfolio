@@ -4,9 +4,6 @@ import { SiX, SiTelegram, SiGithub } from "@icons-pack/react-simple-icons";
 function Socials() {
 	return (
 		<div id="socials" className="w-full md:m-auto md:col-span-5">
-			{/* <h3 className="text-xl font-semibold text-emerald-400 my-5 md:text-2xl md:text-center xl:text-4xl">
-        Socials
-      </h3> */}
 			<div className="flex justify-center items-center gap-5 w-full md:justify-center xl:gap-10">
 				<a
 					href="https://www.linkedin.com/in/minkhantkyaw102"

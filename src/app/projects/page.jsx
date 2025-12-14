@@ -68,14 +68,14 @@ function Projects() {
 					Projects
 				</h2>
 
-				<div className="min-w-80 p-5 m-auto grid grid-cols-1 gap-10 justify-center items-center md:grid-cols-2 xl:grid-cols-3 lg:gap-16">
+				<div className="min-w-[300px] p-5 m-auto grid grid-cols-1 gap-10 justify-center items-center md:grid-cols-2 xl:grid-cols-3 lg:gap-16">
 					{/* projects container */}
 					<div
 						id="0"
 						className="project-card flex flex-col h-full shadow-md shadow-gray-500/30 hover:shadow-emerald-500/30 rounded-b-lg  hover:scale-105 ease-in-out duration-300"
 					>
 						<Image
-							src="/chatesat.png"
+							src="/chatesat.webp"
 							alt="ChateSat-website"
 							width={500}
 							height={500}
@@ -85,7 +85,7 @@ function Projects() {
 							<div className="flex justify-start items-center gap-2">
 								<h3 className="text-base font-bold lg:text-lg">ChateSat</h3>
 								<Link
-									href="https://github.com/mkhantk/Code2Career-Disaster-App-Team-2"
+									href="https://github.com/happer64bit/chate-sat"
 									target="_blank"
 									className="cursor-pointer "
 								>

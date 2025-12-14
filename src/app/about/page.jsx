@@ -51,7 +51,7 @@ function About() {
 		<section
 			id="about"
 			ref={sectionRef}
-			className="about   py-20 md:py-24 flex flex-col justify-center items-center"
+			className="about   py-20 md:py-24 flex flex-col justify-center items-center overflow-hidden"
 		>
 			<main className="relative text-base grid grid-cols-1 md:grid-cols-6 gap-18 md:gap-0  p-5 md:p-0 my-10 md:w-4/5 md:text-lg xl:text-xl ">
 				<section className="facts md:col-span-3 p-5 bg-emerald-400/10 rounded-md">

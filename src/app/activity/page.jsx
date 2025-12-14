@@ -13,7 +13,7 @@ const Activity = () => {
 		const timeline = gsap.timeline({
 			scrollTrigger: {
 				trigger: "#activity",
-				start: "top 60%",
+				start: "top 55%",
 			},
 		});
 		timeline
