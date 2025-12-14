@@ -4,6 +4,7 @@ gsap.registerPlugin(ScrollToPlugin);
 
 const handleNav = (e, id) => {
 	// use gsap to nav
+
 	const target = document.getElementById(id);
 	e.preventDefault();
 	gsap.to(window, {
