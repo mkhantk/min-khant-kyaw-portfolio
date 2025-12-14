@@ -85,7 +85,7 @@ function Projects() {
 							<div className="flex justify-start items-center gap-2">
 								<h3 className="text-base font-bold lg:text-lg">ChateSat</h3>
 								<Link
-									href="https://github.com/mkhantk/web-dictionary"
+									href="https://github.com/mkhantk/Code2Career-Disaster-App-Team-2"
 									target="_blank"
 									className="cursor-pointer "
 								>
@@ -179,8 +179,9 @@ function Projects() {
 								</Link>
 							</div>
 							<p className="text-sm lg:text-base">
-								web-dictionary is build using Merriam Webster Dictionary API and
-								Wordnik API with minimal and responsive asethtic in mind.{" "}
+								Web-dictionary is built using Merriam Webster Dictionary API and
+								Wordnik API built with a clean, distraction-free interface
+								focused on readability.{" "}
 							</p>
 							<div className="flex gap-5">
 								<SiReact color="default" />
@@ -238,8 +239,8 @@ function Projects() {
 								</Link>
 							</div>
 							<p className="text-sm lg:text-base">
-								Space-tourism-website build with mobile-first approach focus on
-								responsive aspect.{" "}
+								Space-tourism-website built with mobile-first approach focusing
+								on pixel-perfect implementation of a high-fidelity Figma design.{" "}
 							</p>
 							<div className="flex gap-5">
 								<SiReact color="default" />
@@ -295,8 +296,8 @@ function Projects() {
 								</Link>
 							</div>
 							<p className="text-sm lg:text-base">
-								Portfolio website with minimal asethtic. Built with React,
-								Tailwind and Nextjs.
+								Portfolio website designed with a minimalist, typography-driven
+								layout. Built with React, Tailwind and Nextjs.
 							</p>
 							<div className="flex gap-5">
 								<SiReact color="default" />
@@ -528,7 +529,7 @@ function Projects() {
 								</Link>
 							</div>
 							<p className="text-sm lg:text-base">
-								Mini food ordering website with add to cart and order fuction.
+								Mini food ordering website with add to cart and order function.
 								Built with React, Tailwindcss and Vite.
 							</p>
 							<div className="flex gap-5">

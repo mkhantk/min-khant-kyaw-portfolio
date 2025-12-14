@@ -53,8 +53,8 @@ function About() {
 			ref={sectionRef}
 			className="about   py-20 md:py-24 flex flex-col justify-center items-center"
 		>
-			<main className="relative text-base grid grid-cols-1 md:grid-cols-6 gap-18 md:gap-0 md:divide-x divide-emerald-400 p-5 md:p-0 my-10 md:w-4/5 md:text-lg xl:text-xl ">
-				<section className="facts md:col-span-3 px-5">
+			<main className="relative text-base grid grid-cols-1 md:grid-cols-6 gap-18 md:gap-0  p-5 md:p-0 my-10 md:w-4/5 md:text-lg xl:text-xl ">
+				<section className="facts md:col-span-3 p-5 bg-emerald-400/10 rounded-md">
 					{/* fun facts */}
 
 					<h2 className="text-xl my-8 text-emerald-400 font-semibold md:text-3xl  xl:text-5xl">
@@ -71,23 +71,23 @@ function About() {
 							</span>{" "}
 							Yangon, Myanmar
 						</li>
-						<li>
+						{/* <li>
 							<span className="text-emerald-400 font-semibold">
 								🛠 Tech Stack:
 							</span>{" "}
-							React · Tailwind · Next.js
-						</li>
+							React | Tailwind | Next.js
+						</li> */}
 						<li>
 							<span className="text-emerald-400 font-semibold">
 								💻 Interests:
 							</span>{" "}
-							Linux · Open Source
+							Linux | Open Source
 						</li>
 						<li>
 							<span className="text-emerald-400 font-semibold">
 								🔥 Strengths:
 							</span>{" "}
-							Problem-solving . Adaptabilty
+							Problem-solving | Adaptabilty
 						</li>
 						<li>
 							<span className="text-emerald-400 font-semibold">🚀 Focus:</span>{" "}
@@ -109,9 +109,9 @@ function About() {
 							learning backend development to better understand the web.
 						</p>
 						<p>
-							Outside of coding, I enjoy open-source software and Linux,Outside
-							of web development, I enjoy learning about open-source software
-							and Linux, watching movies, coffee and chill.
+							When I'm not coding, I enjoy exploring open-source software and
+							Linux. I also love watching movies and grabbing a coffee to relax
+							☕.
 						</p>
 					</article>
 				</section>
